@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="프리미엄 디자인 가구와 인테리어 견적, 맞춤 주문제작 서비스를 제공합니다. 당신만의 특별한 공간을 만들어 드립니다.">
+    <title>ATELIER LUXE | 프리미엄 디자인 가구 & 인테리어</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">ATELIER</span>
+                <span class="logo-accent">LUXE</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">홈</a></li>
+                <li><a href="#products">제품</a></li>
+                <li><a href="#services">서비스</a></li>
+                <li><a href="#custom">주문제작</a></li>
+                <li><a href="#quote">견적요청</a></li>
+                <li><a href="#about">회사소개</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Premium Design Furniture</span>
+                <h1 class="hero-title">
+                    당신의 공간에<br>
+                    <span class="gradient-text">특별함</span>을 더하다
+                </h1>
+                <p class="hero-description">
+                    장인의 손끝에서 탄생하는 프리미엄 가구와 인테리어.<br>
+                    맞춤 제작으로 완성되는 당신만의 특별한 공간을 경험하세요.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">제품 보러가기</a>
+                    <a href="#quote" class="btn btn-outline">견적 요청하기</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">완성 프로젝트</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15년</span>
+                    <span class="stat-label">업계 경력</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">고객 만족도</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>스크롤하여 더 보기</span>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Collection</span>
+                <h2 class="section-title">프리미엄 가구 컬렉션</h2>
+                <p class="section-description">
+                    세심하게 선별된 소재와 장인의 손길로 완성된 가구들을 만나보세요
+                </p>
+            </div>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn" data-filter="sofa">소파</button>
+                <button class="filter-btn" data-filter="table">테이블</button>
+                <button class="filter-btn" data-filter="chair">의자</button>
+                <button class="filter-btn" data-filter="storage">수납장</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card" data-category="sofa">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+                            <div class="placeholder-icon">🛋️</div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">소파</span>
+                        <h3 class="product-name">Velvet Cloud Sofa</h3>
+                        <p class="product-description">프리미엄 벨벳 소재의 3인용 소파</p>
+                        <div class="product-price">
+                            <span class="price">₩3,200,000</span>
+                            <span class="price-note">부터</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="table">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #2d132c 0%, #801336 100%);">
+                            <div class="placeholder-icon">🪵</div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">테이블</span>
+                        <h3 class="product-name">Marble Elegance Table</h3>
+                        <p class="product-description">이탈리아산 대리석 다이닝 테이블</p>
+                        <div class="product-price">
+                            <span class="price">₩4,500,000</span>
+                            <span class="price-note">부터</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="chair">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 100%);">
+                            <div class="placeholder-icon">🪑</div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">의자</span>
+                        <h3 class="product-name">Executive Leather Chair</h3>
+                        <p class="product-description">천연 가죽 이그제큐티브 의자</p>
+                        <div class="product-price">
+                            <span class="price">₩1,800,000</span>
+                            <span class="price-note">부터</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="storage">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #1f1f1f 0%, #3d3d3d 100%);">
+                            <div class="placeholder-icon">🗄️</div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">수납장</span>
+                        <h3 class="product-name">Walnut Cabinet System</h3>
+                        <p class="product-description">월넛 원목 모듈형 수납장</p>
+                        <div class="product-price">
+                            <span class="price">₩2,800,000</span>
+                            <span class="price-note">부터</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="sofa">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);">
+                            <div class="placeholder-icon">🛋️</div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">소파</span>
+                        <h3 class="product-name">Nordic Comfort Sofa</h3>
+                        <p class="product-description">북유럽 스타일 패브릭 소파</p>
+                        <div class="product-price">
+                            <span class="price">₩2,400,000</span>
+                            <span class="price-note">부터</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="table">
+                    <div class="product-image">
+                        <div class="product-placeholder" style="background: linear-gradient(135deg, #232526 0%, #414345 100%);">
+                            <div class="placeholder-icon">🪵</div>
+                        </div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">테이블</span>
+                        <h3 class="product-name">Live Edge Coffee Table</h3>
+                        <p class="product-description">자연 그대로의 에지 테이블</p>
+                        <div class="product-price">
+                            <span class="price">₩1,600,000</span>
+                            <span class="price-note">부터</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">서비스 안내</h2>
+                <p class="section-description">
+                    고객의 니즈에 맞춘 다양한 서비스를 제공합니다
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">인테리어 컨설팅</h3>
+                    <p class="service-description">
+                        전문 디자이너가 공간 분석부터 스타일링까지 토탈 인테리어 솔루션을 제공합니다.
+                    </p>
+                    <ul class="service-features">
+                        <li>공간 분석 및 진단</li>
+                        <li>스타일 컨셉 제안</li>
+                        <li>3D 시뮬레이션</li>
+                        <li>예산 최적화 플랜</li>
+                    </ul>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-badge">BEST</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">맞춤 가구 제작</h3>
+                    <p class="service-description">
+                        공간에 완벽히 맞는 세상에 하나뿐인 가구를 주문 제작해 드립니다.
+                    </p>
+                    <ul class="service-features">
+                        <li>1:1 맞춤 설계</li>
+                        <li>프리미엄 소재 선택</li>
+                        <li>숙련된 장인 제작</li>
+                        <li>품질 보증 서비스</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">견적 및 시공</h3>
+                    <p class="service-description">
+                        투명한 견적과 전문 시공 서비스로 완벽한 결과를 보장합니다.
+                    </p>
+                    <ul class="service-features">
+                        <li>상세 견적서 제공</li>
+                        <li>전문 시공팀 배정</li>
+                        <li>공정 관리 시스템</li>
+                        <li>A/S 보장</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Order Section -->
+    <section class="custom-order" id="custom">
+        <div class="container">
+            <div class="custom-content">
+                <div class="custom-text">
+                    <span class="section-subtitle">Custom Made</span>
+                    <h2 class="section-title">주문제작 서비스</h2>
+                    <p class="custom-description">
+                        기성품에서 찾을 수 없는, 당신만을 위한 특별한 가구를 만들어 드립니다.
+                        전문 디자이너와의 상담을 통해 꿈꾸던 가구를 현실로 구현합니다.
+                    </p>
+                    
+                    <div class="custom-process">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>상담 및 기획</h4>
+                                <p>고객의 니즈 파악 및 디자인 방향 설정</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>설계 및 디자인</h4>
+                                <p>상세 도면 작성 및 3D 렌더링 제작</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>소재 선정</h4>
+                                <p>프리미엄 원자재 선별 및 샘플 확인</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>제작 및 배송</h4>
+                                <p>장인의 손길로 완성 후 안전 배송</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#quote" class="btn btn-primary">주문제작 상담하기</a>
+                </div>
+                
+                <div class="custom-features">
+                    <div class="feature-card glass">
+                        <div class="feature-icon">✨</div>
+                        <h4>프리미엄 소재</h4>
+                        <p>엄선된 원목, 가죽, 패브릭만을 사용합니다</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🎨</div>
+                        <h4>맞춤 디자인</h4>
+                        <p>공간과 취향에 맞는 완벽한 맞춤 설계</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🛡️</div>
+                        <h4>품질 보증</h4>
+                        <p>10년 품질 보증 및 평생 A/S 지원</p>
+                    </div>
+                    <div class="feature-card glass">
+                        <div class="feature-icon">🚚</div>
+                        <h4>안심 배송</h4>
+                        <p>전문팀의 안전한 배송 및 설치</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section" id="quote">
+        <div class="container">
+            <div class="quote-wrapper">
+                <div class="quote-info">
+                    <span class="section-subtitle">Get a Quote</span>
+                    <h2 class="section-title">견적 요청</h2>
+                    <p class="quote-description">
+                        간단한 정보를 입력해 주시면 전문 상담원이 
+                        빠르게 맞춤 견적을 안내해 드립니다.
+                    </p>
+                    
+                    <div class="quote-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⚡</div>
+                            <div class="benefit-text">
+                                <strong>빠른 응답</strong>
+                                <span>24시간 이내 견적 안내</span>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💯</div>
+                            <div class="benefit-text">
+                                <strong>투명한 가격</strong>
+                                <span>숨김 비용 없는 정직한 견적</span>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎁</div>
+                            <div class="benefit-text">
+                                <strong>무료 상담</strong>
+                                <span>전문 디자이너 무료 컨설팅</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="quote-form glass" id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">이름 *</label>
+                            <input type="text" id="name" name="name" required placeholder="홍길동">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처 *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="010-0000-0000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">서비스 유형 *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">선택해주세요</option>
+                            <option value="furniture">가구 구매</option>
+                            <option value="custom">맞춤 주문제작</option>
+                            <option value="interior">인테리어 컨설팅</option>
+                            <option value="total">토탈 인테리어</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">예상 예산</label>
+                        <select id="budget" name="budget">
+                            <option value="">선택해주세요</option>
+                            <option value="under500">500만원 미만</option>
+                            <option value="500-1000">500만원 ~ 1,000만원</option>
+                            <option value="1000-3000">1,000만원 ~ 3,000만원</option>
+                            <option value="3000-5000">3,000만원 ~ 5,000만원</option>
+                            <option value="over5000">5,000만원 이상</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">요청사항</label>
+                        <textarea id="message" name="message" rows="4" placeholder="원하시는 스타일, 크기, 참고 이미지 등을 자유롭게 작성해주세요."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">개인정보 수집 및 이용에 동의합니다. *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">견적 요청하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <div class="about-overlay-text">
+                            <span class="years">15</span>
+                            <span class="label">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title">ATELIER LUXE</h2>
+                    <p class="about-description">
+                        2010년 설립 이래, 아틀리에 럭스는 프리미엄 디자인 가구와 
+                        토탈 인테리어 솔루션을 제공해 왔습니다.
+                    </p>
+                    <p class="about-description">
+                        우리는 단순한 가구 제작을 넘어, 고객의 라이프스타일을 반영한 
+                        특별한 공간을 창조합니다. 엄선된 소재, 숙련된 장인의 기술력, 
+                        그리고 현대적인 디자인 감각이 어우러진 작품들을 만나보세요.
+                    </p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon">🎯</span>
+                            <div>
+                                <strong>장인정신</strong>
+                                <p>한 땀 한 땀 정성을 담은 제작</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💎</span>
+                            <div>
+                                <strong>프리미엄 품질</strong>
+                                <p>최고급 소재만을 엄선</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <div>
+                                <strong>고객 중심</strong>
+                                <p>맞춤형 솔루션 제공</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Contact Us</span>
+                <h2 class="section-title">연락처</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card glass">
+                    <div class="contact-icon">📍</div>
+                    <h3>주소</h3>
+                    <p>서울특별시 강남구 논현로 123<br>아틀리에 럭스 빌딩 1-3층</p>
+                </div>
+
+                <div class="contact-card glass">
+                    <div class="contact-icon">📞</div>
+                    <h3>전화</h3>
+                    <p>대표전화: 02-1234-5678<br>상담전화: 02-1234-5679</p>
+                </div>
+
+                <div class="contact-card glass">
+                    <div class="contact-icon">✉️</div>
+                    <h3>이메일</h3>
+                    <p>info@atelierluxe.co.kr<br>support@atelierluxe.co.kr</p>
+                </div>
+
+                <div class="contact-card glass">
+                    <div class="contact-icon">🕐</div>
+                    <h3>영업시간</h3>
+                    <p>평일: 10:00 - 19:00<br>주말: 11:00 - 18:00</p>
+                </div>
+            </div>
+
+            <div class="showroom-info glass">
+                <h3>🏛️ 쇼룸 방문 안내</h3>
+                <p>
+                    사전 예약 시 프라이빗 쇼룸 투어 및 전문 디자이너 상담을 받으실 수 있습니다.
+                    실제 가구를 직접 보고, 만져보며 품질을 확인해보세요.
+                </p>
+                <a href="#quote" class="btn btn-outline">쇼룸 예약하기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">ATELIER</span>
+                        <span class="logo-accent">LUXE</span>
+                    </a>
+                    <p class="footer-description">
+                        프리미엄 디자인 가구와 인테리어 솔루션
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>제품</h4>
+                        <ul>
+                            <li><a href="#products">소파</a></li>
+                            <li><a href="#products">테이블</a></li>
+                            <li><a href="#products">의자</a></li>
+                            <li><a href="#products">수납장</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>서비스</h4>
+                        <ul>
+                            <li><a href="#services">인테리어 컨설팅</a></li>
+                            <li><a href="#custom">맞춤 제작</a></li>
+                            <li><a href="#quote">견적 요청</a></li>
+                            <li><a href="#contact">쇼룸 예약</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>고객센터</h4>
+                        <ul>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">배송 안내</a></li>
+                            <li><a href="#">A/S 신청</a></li>
+                            <li><a href="#">파트너십 문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ATELIER LUXE. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <span class="toast-message">견적 요청이 완료되었습니다!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
