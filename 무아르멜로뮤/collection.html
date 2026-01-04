@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moire Melomew 컬렉션 - 화이트 라인, 구름 라인, 원목 라인 프리미엄 가구">
+    <meta name="keywords" content="가구, 테이블, 의자, 스툴, 화이트 가구, 디자인 가구">
+    <title>Collection - Moire Melomew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Moire<span>.</span>Melomew</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="service.html" class="nav-link">Service</a></li>
+                    <li><a href="collection.html" class="nav-link active">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn" aria-label="장바구니">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                        <path d="M3 6h18" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-btn" id="menuBtn" aria-label="메뉴"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5">
+                <path d="M18 6 6 18M6 6l12 12" />
+            </svg></button>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="collection.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="cart-page">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:var(--space-xl)">
+                <h1 class="section-title">Collection</h1>
+                <p class="section-subtitle">모든 제품 컬렉션</p>
+            </div>
+
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="table">Table</button>
+                <button class="filter-btn" data-filter="stool">Stool</button>
+                <button class="filter-btn" data-filter="chair">Chair</button>
+                <button class="filter-btn" data-filter="etc">소품</button>
+            </div>
+
+            <div class="product-grid" id="collectionGrid"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <p class="logo">Moire<span>.</span>Melomew</p>
+                    <p class="footer-description">공간과 감성을 디자인하는 프리미엄 가구 브랜드</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/moiremelomew" target="_blank" aria-label="Instagram"><svg
+                                viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg></a>
+                        <a href="https://smartstore.naver.com/moiremelomew" target="_blank" aria-label="SmartStore">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                                <path d="M3 6h18" />
+                                <path d="M16 10a4 4 0 0 1-8 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="collection.html">All Products</a></li>
+                        <li><a href="collection.html?f=new">New</a></li>
+                        <li><a href="collection.html?f=best">Best</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="about.html#guide">이용안내</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <p>카카오톡 : moiremelomew</p>
+                    <p>E-MAIL : moiremelomew@naver.com</p>
+                    <p>평일 10:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Moire Melomew</p>
+                <div class="footer-legal"><a href="about.html#terms">이용약관</a><a href="about.html#privacy">개인정보처리방침</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

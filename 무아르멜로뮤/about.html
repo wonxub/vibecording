@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moire Melomew 브랜드 스토리 - 공간과 감성을 디자인하는 프리미엄 가구 브랜드의 철학">
+    <meta name="keywords" content="브랜드 스토리, 가구 디자인, 인테리어, 프리미엄">
+    <title>About - Moire Melomew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Moire<span>.</span>Melomew</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="service.html" class="nav-link">Service</a></li>
+                    <li><a href="collection.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn" aria-label="장바구니">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                        <path d="M3 6h18" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-btn" id="menuBtn" aria-label="메뉴"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5">
+                <path d="M18 6 6 18M6 6l12 12" />
+            </svg></button>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="collection.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main style="margin-top:var(--header-height)">
+        <!-- Brand Story Hero -->
+        <section class="section brand-story">
+            <div class="container">
+                <div class="brand-story-grid">
+                    <img src="images/brand_philosophy.jpg" alt="Moire Melomew Brand Philosophy"
+                        class="brand-story-image">
+                    <div class="brand-story-content">
+                        <p class="brand-story-tagline">Our Story</p>
+                        <h1 class="brand-story-title text-serif">공간의 문법을<br>새롭게 쓰다</h1>
+                        <p class="brand-story-text">
+                            Moire Melomew는 단순한 가구 브랜드를 넘어, 사물과 공간이 어우러지는 최적의 질서를 연구하는 디자인 그룹입니다.<br><br>
+                            우리는 비움으로써 채워지는 '여백의 가치'를 믿으며, 선과 곡선의 변주를 통해 공간에 새로운 감성을 제안합니다.
+                            사용자의 라이프스타일에 깊숙이 스며들어, 일상을 예술로 변화시키는 하이엔드 공간 솔루션을 경험해 보세요.
+                        </p>
+                        <div class="brand-story-actions">
+                            <a href="collection.html" class="btn btn-primary">Shop Collection</a>
+                            <a href="service.html" class="btn btn-secondary">Service Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section class="section" style="background:var(--color-off-white)">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Philosophy</h2>
+                    <p class="section-subtitle">우리의 디자인 철학</p>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-2xl);text-align:center">
+                    <div>
+                        <h3 style="font-size:var(--text-xl);margin-bottom:var(--space-md)">Minimalism</h3>
+                        <p style="color:var(--color-text-secondary);line-height:1.8">과한 장식을 배제하고 여백의 미를 살린 미니멀 디자인</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size:var(--text-xl);margin-bottom:var(--space-md)">Premium Quality</h3>
+                        <p style="color:var(--color-text-secondary);line-height:1.8">엄선된 소재와 정교한 장인정신으로 완성되는 품질</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size:var(--text-xl);margin-bottom:var(--space-md)">Timeless Design</h3>
+                        <p style="color:var(--color-text-secondary);line-height:1.8">트렌드를 넘어 오래도록 사랑받는 클래식한 아름다움</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide -->
+        <section class="section" id="guide">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">이용안내</h2>
+                    <p class="section-subtitle">주문 전 확인해주세요</p>
+                </div>
+                <div style="max-width:800px;margin:0 auto">
+                    <div style="margin-bottom:var(--space-2xl)">
+                        <h3 style="font-size:var(--text-lg);margin-bottom:var(--space-md)">배송 안내</h3>
+                        <p style="color:var(--color-text-secondary);line-height:1.9">• 주문제작 상품은 약 2-4주 소요됩니다.<br>• 배송비는
+                            상품별로 상이하며, 도서산간 지역은 추가 배송비가 발생할 수 있습니다.<br>• 대형 가구는 전문 배송팀이 직접 방문 설치해드립니다.</p>
+                    </div>
+                    <div style="margin-bottom:var(--space-2xl)">
+                        <h3 style="font-size:var(--text-lg);margin-bottom:var(--space-md)">교환 및 반품</h3>
+                        <p style="color:var(--color-text-secondary);line-height:1.9">• 주문제작 상품의 특성상 단순 변심 교환/반품이
+                            어렵습니다.<br>• 상품 하자 시 수령일로부터 7일 이내 접수해주세요.<br>• 교환/반품 관련 문의는 카카오톡 채널로 연락주세요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact" style="background:var(--color-off-white)">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">문의하기</p>
+                </div>
+                <div style="text-align:center;max-width:500px;margin:0 auto">
+                    <p style="margin-bottom:var(--space-lg);color:var(--color-text-secondary)">제품 문의, 커스텀 주문, 협업 제안
+                        등<br>궁금한 점이 있으시면 언제든 연락주세요.</p>
+                    <p style="margin-bottom:var(--space-sm)"><strong>카카오톡</strong> : moiremelomew</p>
+                    <p style="margin-bottom:var(--space-sm)"><strong>이메일</strong> : moiremelomew@naver.com</p>
+                    <p style="margin-bottom:var(--space-xl)"><strong>운영시간</strong> 평일 10:00 - 18:00</p>
+                    <a href="https://pf.kakao.com/moiremelomew" target="_blank" class="btn btn-primary">카카오톡 문의하기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <p class="logo">Moire<span>.</span>Melomew</p>
+                    <p class="footer-description">공간과 감성을 디자인하는 프리미엄 가구 브랜드</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/moiremelomew" target="_blank" aria-label="Instagram"><svg
+                                viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg></a>
+                        <a href="https://smartstore.naver.com/moiremelomew" target="_blank" aria-label="SmartStore">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                                <path d="M3 6h18" />
+                                <path d="M16 10a4 4 0 0 1-8 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="collection.html">All Products</a></li>
+                        <li><a href="collection.html?f=new">New</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="#guide">이용안내</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <p>카카오톡 : moiremelomew</p>
+                    <p>E-MAIL : moiremelomew@naver.com</p>
+                    <p>평일 10:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Moire Melomew</p>
+                <div class="footer-legal"><a href="#terms" id="terms">이용약관</a><a href="#privacy"
+                        id="privacy">개인정보처리방침</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

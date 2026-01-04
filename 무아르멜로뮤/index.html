@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moire Melomew - 공간과 감성을 디자인하는 프리미엄 가구 브랜드">
+    <meta name="keywords" content="가구, 인테리어, 디자인 가구, 프리미엄 가구">
+    <title>Moire Melomew - 공간과 감성을 디자인하다</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Moire<span>.</span>Melomew</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="service.html" class="nav-link">Service</a></li>
+                    <li><a href="collection.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn" aria-label="장바구니">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                        <path d="M3 6h18" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-btn" id="menuBtn" aria-label="메뉴"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5">
+                <path d="M18 6 6 18M6 6l12 12" />
+            </svg></button>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="collection.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-slide-bg" style="background-image: url('images/hero1.jpg')"></div>
+                <div class="hero-content">
+                    <p class="hero-tagline">Design & Object Studio</p>
+                    <h1 class="hero-title text-serif">가구를 넘어<br>공간을 디자인합니다</h1>
+                    <p class="hero-description">당신의 일상에 스며드는 미니멀 디자인,<br>무아르 멜로뮤가 제안하는 공간 솔루션</p>
+                    <div class="hero-cta">
+                        <a href="service.html" class="btn btn-primary">컨설팅 문의</a>
+                        <a href="collection.html" class="btn btn-secondary">컬렉션 보기</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('images/hero2.jpg')"></div>
+                <div class="hero-content">
+                    <p class="hero-tagline">Bespoke Production</p>
+                    <h1 class="hero-title text-serif">당신을 위한<br>하나뿐인 오브제</h1>
+                    <p class="hero-description">형태, 질감, 사이즈까지 - 공간의 문법에 맞춘<br>프리미엄 주문제작 가구를 경험하세요</p>
+                    <div class="hero-cta">
+                        <a href="service.html#custom" class="btn btn-primary">주문제작 문의</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('images/hero3.jpg')"></div>
+                <div class="hero-content">
+                    <p class="hero-tagline">Interior Consulting</p>
+                    <h1 class="hero-title text-serif">비움의 미학으로<br>채우는 공간</h1>
+                    <p class="hero-description">무아르 멜로뮤의 시선으로 제안하는<br>셀프 인테리어 및 오브제 큐레이팅 서비스</p>
+                    <div class="hero-cta">
+                        <a href="service.html#consulting" class="btn btn-primary">서비스 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-arrow prev" id="heroPrev" aria-label="이전 슬라이드">
+            <svg viewBox="0 0 24 24">
+                <path d="m15 18-6-6 6-6" />
+            </svg>
+        </button>
+        <button class="slider-arrow next" id="heroNext" aria-label="다음 슬라이드">
+            <svg viewBox="0 0 24 24">
+                <path d="m9 18 6-6-6-6" />
+            </svg>
+        </button>
+        <div class="slider-dots" id="heroDots"></div>
+    </section>
+
+    <section class="section collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Collections</h2>
+                <p class="section-subtitle">시그니처 컬렉션을 만나보세요</p>
+            </div>
+            <div class="collection-grid">
+                <a href="collection.html?c=white" class="collection-card">
+                    <div class="collection-card-bg"></div>
+                    <div class="collection-card-content">
+                        <h3 class="collection-name">White Line</h3>
+                        <p class="collection-count">12 Products</p>
+                    </div>
+                </a>
+                <a href="collection.html?c=cloud" class="collection-card">
+                    <div class="collection-card-bg"></div>
+                    <div class="collection-card-content">
+                        <h3 class="collection-name">Cloud Line</h3>
+                        <p class="collection-count">8 Products</p>
+                    </div>
+                </a>
+                <a href="collection.html?c=wood" class="collection-card">
+                    <div class="collection-card-bg"></div>
+                    <div class="collection-card-content">
+                        <h3 class="collection-name">Wood Line</h3>
+                        <p class="collection-count">10 Products</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Arrivals</h2>
+                <p class="section-subtitle">새롭게 선보이는 제품들</p>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+            <div style="text-align:center;margin-top:var(--space-2xl)"><a href="collection.html"
+                    class="btn btn-secondary">전체 상품 보기</a></div>
+        </div>
+    </section>
+
+    <section class="section" style="background:var(--color-white)">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Best Sellers</h2>
+                <p class="section-subtitle">가장 사랑받는 제품들</p>
+            </div>
+            <div class="product-grid" id="bestGrid"></div>
+        </div>
+    </section>
+
+    <section class="section" style="background:var(--color-off-white)">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">디자인 그룹 무아르 멜로뮤의 전문적인 솔루션</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card" data-aos>
+                    <h3 class="service-card-title">Design Collection</h3>
+                    <p class="service-card-desc">무아르 멜로뮤만의 독창적인 감성을 담은<br>시그니처 가구 라인업을 제안합니다.</p>
+                    <a href="collection.html" class="service-link">View Products →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <h3 class="service-card-title">Bespoke Production</h3>
+                    <p class="service-card-desc">원하는 사이즈와 질감으로 공간에 최적화된<br>주문제작 가구를 제작해 드립니다.</p>
+                    <a href="service.html#custom" class="service-link">Get a Quote →</a>
+                </div>
+                <div class="service-card" data-aos>
+                    <h3 class="service-card-title">Interior Consulting</h3>
+                    <p class="service-card-desc">전문적인 시선으로 제안하는 셀프 인테리어<br>가이드와 공간 스타일링 솔루션입니다.</p>
+                    <a href="service.html#consulting" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section smartstore-banner" data-aos>
+        <div class="smartstore-bg" style="background-image: url('images/brand_philosophy.jpg')"></div>
+        <div class="container relative z-2">
+            <div class="smartstore-flex">
+                <div class="smartstore-text-side">
+                    <p class="smartstore-tagline">Official Store</p>
+                    <h2 class="smartstore-title text-serif">디테일의 가치를 소유하다</h2>
+                    <p class="smartstore-description">Moire Melomew의 모든 컬렉션을<br>네이버 스마트스토어에서 만나보세요.</p>
+                </div>
+                <div class="smartstore-button-side">
+                    <a href="https://smartstore.naver.com/moiremelomew" target="_blank" rel="noopener"
+                        class="btn btn-primary">스마트스토어 바로가기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section instagram">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Instagram</h2>
+                <p class="section-subtitle">@moiremelomew</p>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+                <div class="instagram-item"></div>
+            </div>
+            <div style="text-align:center;margin-top:var(--space-2xl)"><a href="https://instagram.com/moiremelomew"
+                    target="_blank" rel="noopener" style="color:var(--color-text-secondary)">Instagram에서 더 보기 →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <p class="logo">Moire<span>.</span>Melomew</p>
+                    <p class="footer-description">공간과 감성을 디자인하는 프리미엄 가구 브랜드</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/moiremelomew" target="_blank" aria-label="Instagram"><svg
+                                viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg></a>
+                        <a href="https://smartstore.naver.com/moiremelomew" target="_blank" aria-label="SmartStore">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                                <path d="M3 6h18" />
+                                <path d="M16 10a4 4 0 0 1-8 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="collection.html">All Products</a></li>
+                        <li><a href="collection.html?f=new">New</a></li>
+                        <li><a href="collection.html?f=best">Best</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="about.html#guide">이용안내</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <p>카카오톡 : moiremelomew</p>
+                    <p>E-MAIL : moiremelomew@naver.com</p>
+                    <p>평일 10:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Moire Melomew</p>
+                <div class="footer-legal"><a href="about.html#terms">이용약관</a><a href="about.html#privacy">개인정보처리방침</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
